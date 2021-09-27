@@ -70,7 +70,7 @@ const question3 = (myValue) => {
 const question4 = (myNumber) => {
   let myFaveFood;
   /////// write your SWITCH statement below this line /////////
-  switch(expression) {
+  switch(myNumber) {
   case 1:
     myFaveFood = "Pizza";
     break;
@@ -106,6 +106,12 @@ const question5 = (myTemp) => {
   return myWeather;
 }
 
+const myNumber = prompt("Enter a Number");
+const myValue = prompt("Enter a Number");
+const myNumber = prompt("Enter a Number");
+const myTemp = prompt("Enter a Number");
+//console.log(question1(prompt("Enter a Number")));
+  
 const vars = ["myDept", "myLang", "myLang", "myFaveFood", "myWeather"]
 const questions = [myDept, myLang, myLang, myFaveFood, myWeather];
 let text = ""
