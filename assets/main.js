@@ -101,22 +101,21 @@ const question4 = (myNumber) => {
 const question5 = (myTemp) => {
   let myWeather;
   /////// write your TERNARY OPERATOR statement below this line /////////
-  myWeather = myTemp >= 75 ? "Great weather!" : myTemp < 75 ? "Still cold.";
+  myWeather = myTemp >= 75 ? "Great weather!" : "Still cold.";
   /////// write your TERNARY OPERATOR statement above this line /////////
   return myWeather;
 }
 
-const myNumber = prompt("Enter a Number");
-const myValue = prompt("Enter a Number");
-const myNumber = prompt("Enter a Number");
-const myTemp = prompt("Enter a Number");
-//console.log(question1(prompt("Enter a Number")));
-  
-const vars = ["myDept", "myLang", "myLang", "myFaveFood", "myWeather"]
-const questions = [myDept, myLang, myLang, myFaveFood, myWeather];
+q1 = (question1(prompt("Enter a Number for your department")));
+q2 = (question2(prompt("Enter a programming language")));
+q3 = (question3(prompt("Enter a programming language")));
+q4 = (question4(prompt("Enter the number of your favorite food (1 = Pizza, 2 = Hamburger, 3 = Ice Cream, 4 = Sushi, Anything else = Pho)")));
+q5 = (question5(prompt("Enter the temperature")));
+
+const questions = [q1, q2, q3, q4, q5];
 let text = ""
 for (let j = 1; j < 6; j++){
-    console.log (j + ". " + vars[j] + " = " + questions[j] + "\n");
-    text += j + ". " + vars[j] + " = " + questions[j] + "<br>";
+    console.log (j + ". " + questions[j-1] + "\n");
+    text += j + ". " + questions[j-1] + "<br>";
 }
 document.getElementById("text").innerHTML = text;
