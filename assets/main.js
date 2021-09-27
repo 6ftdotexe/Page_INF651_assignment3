@@ -105,3 +105,12 @@ const question5 = (myTemp) => {
   /////// write your TERNARY OPERATOR statement above this line /////////
   return myWeather;
 }
+
+const vars = ["myDept", "myLang", "myLang", "myFaveFood", "myWeather"]
+const questions = [myDept, myLang, myLang, myFaveFood, myWeather];
+let text = ""
+for (let j = 1; j < 6; j++){
+    console.log (j + ". " + vars[j] + " = " + questions[j] + "\n");
+    text += j + ". " + vars[j] + " = " + questions[j] + "<br>";
+}
+document.getElementById("text").innerHTML = text;
