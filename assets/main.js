@@ -71,20 +71,20 @@ const question4 = (myNumber) => {
   let myFaveFood;
   /////// write your SWITCH statement below this line /////////
   switch(myNumber) {
-  case 1:
-    myFaveFood = "Pizza";
-    break;
-  case 2:
-    myFaveFood = "Hamburger";
-    break;
-  case 3:
-    myFaveFood = "Ice Cream";
-    break;
-  case 4:
-    myFaveFood = "Sushi";
-    break;
-  default:
-      myFaveFood = "Pho";
+    case 1:
+      myFaveFood = "Pizza";
+      break;
+    case 2:
+      myFaveFood = "Hamburger";
+      break;
+    case 3:
+      myFaveFood = "Ice Cream";
+      break;
+    case 4:
+      myFaveFood = "Sushi";
+      break;
+    default:
+        myFaveFood = "Pho";
 }
   /////// write your SWITCH statement above this line /////////
   return myFaveFood;
